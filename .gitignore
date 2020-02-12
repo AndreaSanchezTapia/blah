@@ -6,3 +6,6 @@
 # ignora arquivos de excel
 *.xlsx
 docs
+.pdf
+
+

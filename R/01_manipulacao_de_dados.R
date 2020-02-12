@@ -110,6 +110,10 @@ comm.df <- tidyr::gather(comm[, -1])
 dim(comm.df)
 head(comm.df)
 
+head(comm.df)
+
+comm.df[comm.df$TaxCode == "sp10", ]
+
 # nomes atuais
 colnames(comm.df)
 # modificando os nomes das colunas
@@ -118,7 +122,7 @@ colnames(comm.df) <-  c("TaxCode", "Abundance")
 colnames(comm.df)
 
 # primeiro criamos a sequência
-seq.site <- rep(Sites, each = n.sp)
+seq.site <- rep(Sites, times = n.sp)
 # checando a dimensão
 length(seq.site)
 # adicionando ao objeto comm.df

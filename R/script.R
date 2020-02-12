@@ -3,9 +3,3 @@
 
 
 table_format <- read.csv(file = "data/data_format.csv")
-
-
-# bom dia
-elakrjhalekrjghaer
-alsdkjfhakjdfhlkJFHLDKjfhlwe
-

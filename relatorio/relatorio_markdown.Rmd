@@ -1,0 +1,52 @@
+---
+title: "relatorio"
+author: "Andrea Sánchez-Tapia"
+date: "2/13/2020"
+output: html_document
+
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      message = FALSE, 
+                      warning = FALSE)
+```
+
+## R Markdown
+
+This is an R __Markdown__ document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.  
+
+When you click the **Knit** button a document will be generated that includes both content as well as the __output of any embedded R code chunks within the document__. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo = TRUE, fig.height= 6, fig.cap= "__Figura 1 plot de pressão__"}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+library(dplyr)
+```
+
+## figura no texto
+
+![](../figs/figura01.png)
+
+## figura no chunk
+
+```{r}
+knitr::include_graphics("../figs/figura01.png")
+```
+
+
